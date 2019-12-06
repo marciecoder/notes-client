@@ -1,0 +1,25 @@
+.note-header-main {
+  background: var(--color-lightest);
+  padding: 2px 5px;
+  margin: -1px;
+}
+
+.note-header-icon {
+  margin-left: 5px;
+  color: var(--color-lightgrey-dark)
+}
+
+.note-header-text-box {
+  height: 20px;
+  font-size: 14px;
+  margin: -1px;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-left: 4px;
+  padding-bottom: 2px;
+  border: 1px solid white;
+}
+
+.note-header-text-box:focus {
+  outline: none !important;
+}

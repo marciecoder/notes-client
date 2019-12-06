@@ -1,0 +1,23 @@
+.editor-main {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.editor-header {
+  background-color: var(--color-darkgrey-light);
+  display: flex;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+.editor-body {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.note-panel-container {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+}

@@ -1,0 +1,66 @@
+:root {
+  --color-dark: #7F7E7E;
+  --color-darker: #464646;
+  --color-darkest: #000000;
+
+  --color-darkgrey-darker: #0D0C0C;
+  --color-darkgrey-dark: #4E4D4D;
+  --color-darkgrey-light: #ABAAAA;
+  --color-darkgrey-lighter: #DDDBDB;
+
+  --color-lightgrey-darker: #474343;
+  --color-lightgrey-dark: #787575;
+  --color-lightgrey-light: #CECCCC;
+  --color-lightgrey-lighter: #FFFDFD;
+
+  --color-light: #A2A0A0;
+  --color-lighter: #CECECE;
+  --color-lightest: #FFFFFF;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--color-lighter);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  color: var(--color-darkest);
+  background-color: var(--color-lightest);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-darkgrey-darker);
+  font-size: 17px;
+}
+
+a:hover {
+  color: var(--color-darkgrey-darker);
+}
+
+a:visited {
+  color: var(--color-darkgrey-darker);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}

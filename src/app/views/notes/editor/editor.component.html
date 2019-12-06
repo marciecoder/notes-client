@@ -1,0 +1,9 @@
+<div class="editor-main">
+  <!--Change to note header-->
+  <div *ngIf="loadedNoteIds" class="editor-header">
+    <app-note-header *ngFor="let loadedNote of loadedNoteIds" id="{{loadedNote}}" (editExit)="notePanel.onHeaderEditExit()"></app-note-header>
+  </div>
+  <div class="editor-body">
+    <app-note-panel #notePanel class="note-panel-container" [id]="activeNoteId" id="{{activeNoteId}}"></app-note-panel>
+  </div>
+</div>

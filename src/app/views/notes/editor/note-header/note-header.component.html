@@ -1,0 +1,12 @@
+<div id="{{headerId}}">
+  <div *ngIf="editMode; then editTemplate else displayTemplate"></div>
+  <ng-template #displayTemplate>
+    <div class="note-header-main">
+      <span (click)="handleOnClick($event)">{{note.title}}</span>
+      <i class="fa fa-times note-header-icon" (click)="onCloseClicked()" aria-hidden="true"></i>
+    </div>
+  </ng-template>
+  <ng-template #editTemplate>
+    <input [(ngModel)]="noteTitle"  (blur)="handleBlur()"  type="text" (keypress)="onKeyPressEvent($event)" class="note-header-text-box" id="{{textBoxId}}">
+  </ng-template>
+</div>
